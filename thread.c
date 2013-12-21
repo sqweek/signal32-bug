@@ -1,10 +1,12 @@
 #include <pthread.h>
+#include <stdio.h>
 #include <unistd.h>
 
 static void*
 threadfunc(void* dummy)
 {
 	while(1) {
+		printf(".\n");
 		sleep(1);
 	}
 }
