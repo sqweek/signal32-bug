@@ -11,5 +11,7 @@ func main() {
 	time.Sleep(time.Second * 2)
 	if C.CancelThread() != 0 {
 		Println("thread cancelled as expected")
+	} else {
+		Println("thread finished but wasn't cancelled??")
 	}
 }
